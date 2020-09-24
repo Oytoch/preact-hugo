@@ -1,0 +1,8 @@
+---
+name: mon-pipeline
+
+steps:
+- name: hello-word
+  image: busybox
+  commands:
+  - echo "hello world"
