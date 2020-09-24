@@ -20,7 +20,8 @@ steps:
     icon_url: https://i.ytimg.com/vi/V5eHeiMB4Tg/hqdefault.jpg
     template: >
       {{#success build.status}}
-        build {{build.number}} réussi. Tu vas faire quoi ?
+        build {{build.number}} réussi. Tu vas faire quoi ? Thomas
       {{else}}
         build {{build.number}} failed. Erreur :'(. <@channelname> <@someone>
       {{/success}}
+
