@@ -17,3 +17,10 @@ steps:
       from_secret: slack
     channel: dev
     username: drone
+    icon_url: https://vignette.wikia.nocookie.net/abolotcho/images/2/2b/Lama_bizarre004.jpg/revision/latest?cb=20140522131715&path-prefix=fr 
+    template: >
+      {{#success build.status}}
+        build {{build.number}} réussi. Tu va faire quoi ?
+      {{else}}
+        build {{build.number}} failed. Erreur :'(. <@channelname> <@someone>
+      {{/success}}
