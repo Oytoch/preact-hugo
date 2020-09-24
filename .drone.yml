@@ -7,3 +7,13 @@ steps:
   image: busybox
   commands:
   - echo "hello world"
+  - preact create oytoch/preact-hugo  test
+
+steps:
+- name: slack
+  image: plugins/slack
+  settings:
+    webhook: 
+      from_secret: slack
+    channel: dev
+    username: drone
