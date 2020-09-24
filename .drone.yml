@@ -15,8 +15,8 @@ steps:
   settings:
     webhook: 
       from_secret: slack
-    channel: dev
-    username: drone
+    channel: drone-ci
+    link_names: true
     icon_url: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/PNG_transparency_demonstration_2.png/300px-PNG_transparency_demonstration_2.png
     template: >
       {{#success build.status}}
