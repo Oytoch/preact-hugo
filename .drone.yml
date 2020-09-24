@@ -19,6 +19,7 @@ steps:
       from_secret: slack
     channel: drone-ci
     link_names: true
+    icon_url: https://cloud.esportconnect.com/avatars/ErlARqzo5fwdXbNktQ7j1368g_g2Xal1IWYQjm7TJz6F94n3MSAUNV8LkthHeouPwy5KfDZcGxBp.jpg
     image_url: https://cloud.esportconnect.com/avatars/ErlARqzo5fwdXbNktQ7j1368g_g2Xal1IWYQjm7TJz6F94n3MSAUNV8LkthHeouPwy5KfDZcGxBp.jpg
     template: >
       {{#success build.status}}
