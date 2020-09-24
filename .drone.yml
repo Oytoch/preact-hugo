@@ -9,8 +9,7 @@ steps:
   - echo "hello world"
   - preact create oytoch/preact-hugo  test
 
-steps:
-- name: slack
+- name: notif
   image: plugins/slack
   settings:
     webhook: 
