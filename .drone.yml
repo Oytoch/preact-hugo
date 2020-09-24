@@ -17,7 +17,7 @@ steps:
       from_secret: slack
     channel: drone-ci
     link_names: true
-    icon_url: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png
+    icon_url: https://i.ytimg.com/vi/V5eHeiMB4Tg/hqdefault.jpg
     template: >
       {{#success build.status}}
         build {{build.number}} réussi. Tu vas faire quoi ?
