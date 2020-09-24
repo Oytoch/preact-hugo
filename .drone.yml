@@ -3,20 +3,23 @@ kind: pipeline
 name: mon-pipeline
 
 steps:
-- name: hello-word
-  image: busybox
+ 
+- name: create
+  image: lowess/preact-cli
   commands:
-  - echo "hello world"
-  - preact create oytoch/preact-hugo  test
+    - preact create oytoch/preact-hugo#${DRONE_COMMIT} test
+    - cd test
+    - npm install
+    - npm run build
 
-- name: notif
+- name: slack
   image: plugins/slack
   settings:
     webhook: 
       from_secret: slack
     channel: drone-ci
     link_names: true
-    icon_url: https://i.ytimg.com/vi/V5eHeiMB4Tg/hqdefault.jpg
+    icon_url: https://cloud.esportconnect.com/avatars/ErlARqzo5fwdXbNktQ7j1368g_g2Xal1IWYQjm7TJz6F94n3MSAUNV8LkthHeouPwy5KfDZcGxBp.jpg
     template: >
       {{#success build.status}}
         build {{build.number}} réussi. Tu vas faire quoi ? Thomas
