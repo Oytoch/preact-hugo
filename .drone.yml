@@ -26,5 +26,5 @@ steps:
         build {{build.number}} réussi. Tu vas faire quoi ? Thomas
       {{else}}
         build {{build.number}} failed. Erreur :'(. <@channelname> <@someone>
-      {{/success}}
+      {{/success}} 
 
