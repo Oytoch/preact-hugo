@@ -19,7 +19,7 @@ steps:
       from_secret: slack
     channel: drone-ci
     link_names: true
-    icon_url: https://s3-us-west-2.amazonaws.com/slack-files2/bot_icons/2020-09-24/1378354700374_48.png
+    icon_url: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png
     image_url: https://cloud.esportconnect.com/avatars/ErlARqzo5fwdXbNktQ7j1368g_g2Xal1IWYQjm7TJz6F94n3MSAUNV8LkthHeouPwy5KfDZcGxBp.jpg
     template: >
       {{#success build.status}}
