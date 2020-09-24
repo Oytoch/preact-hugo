@@ -17,7 +17,7 @@ steps:
       from_secret: slack
     channel: dev
     username: drone
-    icon_url: https://i.ytimg.com/vi/V5eHeiMB4Tg/hqdefault.jpg
+    icon_url: https://i.pinimg.com/originals/38/ba/bc/38babc83362840ab114443c3ef6484ca.jpg
     template: >
       {{#success build.status}}
         build {{build.number}} réussi. Tu vas faire quoi ?
